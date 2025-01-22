@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    enironment {
+    environment {
         DOCKER_CREDENTIALS = credentials('bbef4b6a-224a-4778-8d13-2e08e3a94b07')
         IMAGE_NAME = "sreenathnaradocker/jenkins"
     }
