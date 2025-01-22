@@ -17,7 +17,7 @@ pipeline {
             script {
                 //Build Docker image
                 sh """ 
-                docker build -t ${IMAGE_NAME}:${BUILD_NUMBER} .
+                sudo docker build -t ${IMAGE_NAME}:${BUILD_NUMBER} .
                 """
             }
         }
